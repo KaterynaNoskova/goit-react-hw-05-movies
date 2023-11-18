@@ -5,7 +5,7 @@ import { LinkBack } from "./LinkBack";
 import stub from './images/stub.png'
 //import css
 
-export function MoviesDetails() {
+function MoviesDetails() {
     const { movieId } = useParams();
     const [movie, setMovie] = useState(null);
     const [load, setLoad] = useState(true);
@@ -95,3 +95,4 @@ export function MoviesDetails() {
         </>
     )
 }
+export default MoviesDetails;

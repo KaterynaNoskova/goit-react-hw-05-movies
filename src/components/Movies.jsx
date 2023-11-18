@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { searchMovies } from 'api/search-movies';
 import { SearchBar } from './searchbar/SearchBar';
 
-export const Movies = () => {
+const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const searchQuery = searchParams.get('searchQuery') ?? '';
   const [movies, setMovies] = useState([]);
@@ -48,3 +48,4 @@ export const Movies = () => {
     </div>
   );
 };
+export default Movies;

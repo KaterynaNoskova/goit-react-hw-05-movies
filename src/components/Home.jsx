@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getTrending } from 'api/get-trending';
 
-export const Home = () => {
+const Home = () => {
     const [moviesTrend, setMoviesTrend] = useState([]);
     const [load, setLoad] = useState(false);
     const location = useLocation();
@@ -38,3 +38,4 @@ export const Home = () => {
         </div>
     )
 }
+export default Home;

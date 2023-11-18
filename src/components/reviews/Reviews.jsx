@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 // import css
 
-export function Reviews() {
+function Reviews() {
     const [reviews, setReviews] = useState([]);
     const [load, setLoad] = useState(true);
     const { movieId } = useParams();
@@ -40,3 +40,4 @@ export function Reviews() {
         </>
     )
 }
+export default Reviews;
