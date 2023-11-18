@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import stub from '../images/stub.png';
 //import css
 
-export function Credits(){
+export function Cast(){
     const [credit, setCredit] = useState([]);
     const [load, setLoad] = useState(true);
     const [movieId] = useParams();

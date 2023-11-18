@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getTrending } from 'api/get-trending';
 
-export const HomePage = () => {
+export const Home = () => {
     const [moviesTrend, setMoviesTrend] = useState([]);
     const [load, setLoad] = useState(false);
     const location = useLocation();
