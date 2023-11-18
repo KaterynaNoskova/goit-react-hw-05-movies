@@ -7,7 +7,7 @@ import stub from '../images/stub.png';
 function Cast(){
     const [credit, setCredit] = useState([]);
     const [load, setLoad] = useState(true);
-    const [movieId] = useParams();
+    const {movieId} = useParams();
 
     useEffect(() => {
         const getMoviesCr = async () => {

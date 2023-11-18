@@ -15,7 +15,7 @@ export function Navigation(){
     <div>
         <header>
             <nav>
-                <LinkStyle to="/"></LinkStyle>
+                <LinkStyle to="/">Home</LinkStyle>
                 <LinkStyle to="/movies">Movies</LinkStyle>
             </nav>
         </header>
