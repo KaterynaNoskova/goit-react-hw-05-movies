@@ -28,11 +28,11 @@ export const Home = () => {
                 <p>Wait a minute...</p>
             ) : (
                 <ul>
-                    {moviesTrend.map(({ id, title }) => {
+                    {moviesTrend.map(({ id, title }) => (
                         <li key={id}>
                             <Link to={`/movies/${id}`} state={{ form: location }}>{title}</Link>
                         </li>
-                    })}
+                    ))}
                 </ul>
             )}
         </div>
