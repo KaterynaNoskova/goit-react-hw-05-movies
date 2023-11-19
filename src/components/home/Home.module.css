@@ -1,0 +1,17 @@
+.homeLi{
+    list-style-type: none;
+    margin: 5px;
+}
+.homeLink{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+.homeLink:hover,
+.homeLink:focus{
+    color: orange;
+}
+.homeTitle{
+    margin: 10px;
+    font-size: 20px;
+}

@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { searchMovies } from 'api/search-movies';
-import { SearchBar } from './searchbar/SearchBar';
+import { SearchBar } from '../searchbar/SearchBar';
+import css from './Movies.module.css';
 
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -33,8 +34,9 @@ const Movies = () => {
       <SearchBar value={searchQuery} onSubmit={queryStringUpdate} />
       <ul>
         {movies.map(({ id, title }) => (
-          <li key={id}>
+          <li key={id} className={css.moviesLi}>
             <Link
+            className={css.moviesLink}
               to={`${id}`}
               state={{
                 from: location,
