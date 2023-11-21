@@ -10,8 +10,8 @@ export const getMoviesCredits = async (movie_id) => {
                 api_key:API_KEY,
             }
         });
-        const {credits} = resp.data;
-        return credits;
+        const {cast} = resp.data;
+        return cast;
     }catch(error){
         console.error('Error:', error.message);
         throw error;

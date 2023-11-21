@@ -34,10 +34,11 @@ function Cast(){
                 {credit.map(({ id, name, profile_path, character }) => (
                     <li key={id}>
                         {profile_path === null ? (
-                            //import logo
-                            <img src={stub} alt={name} width="92" height="92"></img>
-                        ) : (<img src={`https://image.tmdb.org/t/p/w92${profile_path}`}
-                            alt={name}></img>)}
+                            <img src={stub} alt={name} width="92" height="92"/>
+                        ) : (
+                            <img src={`https://image.tmdb.org/t/p/w92${profile_path}`}
+                            alt={name}/>
+                        )}
                         <span>{name}</span>
                         <p>{character}</p>
                     </li>

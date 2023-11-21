@@ -10,8 +10,8 @@ export const getMoviesReviews = async (movie_id) => {
                 api_key:API_KEY,
             }
         });
-        const {reviews} = resp.data;
-        return reviews;
+        const {results} = resp.data;
+        return results;
     }catch(error){
         console.error('Error:', error.message);
         throw error;
